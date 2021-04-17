@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HELLO</title>
+</head>
+<body>
+<p align="right"><a href="/admin">ADMIN</a>
+{% block content %}
+<h1> List of Characters </h1>
+{% for c in chars %}
+<div>
+    <p><a href=""> Name : {{c.name}} </a></p>
+    <p> Owner :  {{c.owner}}</p>
+    <p> -----------------------------------</p>
+</div>
+{% endfor %}
+
+
+{% endblock %}
+</body>
+</html>
